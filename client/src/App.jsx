@@ -1,9 +1,11 @@
 import "./App.css";
+import Header from "./components/Header";
+import logo from "./assets/react.svg";
 
 function App() {
   return (
     <>
-      <h1>Hi</h1>
+      <Header pageTitle="Frontend authenticated with JWT" logoSrc={logo} />
     </>
   );
 }
