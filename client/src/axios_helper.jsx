@@ -3,7 +3,7 @@ import axios from "axios";
 axios.defaults.baseURL = "http://localhost:8080";
 axios.defaults.headers.post["Content-type"] = "application/json";
 
-const request = (method, url, data) => {
+export const request = (method, url, data) => {
   return axios({
     method: method,
     url: url,
@@ -11,4 +11,4 @@ const request = (method, url, data) => {
   });
 };
 
-export default request;
+

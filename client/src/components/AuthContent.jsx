@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import request from "../axios_helper";
+import {request} from "../axios_helper";
 
 const AuthContent = () => {
   const [data, setData] = useState([]);
