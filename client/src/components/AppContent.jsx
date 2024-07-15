@@ -18,6 +18,8 @@ const AppContent = () => {
 
   return (
     <>
+      <Buttons login={login} logout={logout} />
+
       {componentToShow === "welcome" && <WelcomeContent />}
       {componentToShow === "login" && <LoginForm onComponentChange={setComponentToShow} />}
       {componentToShow === "messages" && <AuthContent />}
